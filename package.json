@@ -1,10 +1,13 @@
 {
+  "homepage": "https://ZeeDev204.github.io/Web-Project",
   "name": "doctor-patient-portal",
   "private": true,
   "version": "1.0.0",
   "description": "Doctor-Patient Portal Application",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
     "client": "vite",
