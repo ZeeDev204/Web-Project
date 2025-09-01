@@ -1,0 +1,42 @@
+/* src/styles/Landing.css */
+.landing {
+  background: linear-gradient(to right, #1E1E1E, #2A133F);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #7C3AED;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.cta-btn {
+  background-color: #7C3AED;
+  padding: 12px 24px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #5B21B6;
+}

@@ -1,0 +1,34 @@
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: #ddd;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin: 1rem 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #9b59b6;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c98eff;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  color: #bbb;
+  font-weight: 300;
+}
+
+

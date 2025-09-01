@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.loginBox {
+  background: #111;
+  border-radius: 15px;
+  padding: 2.5rem 3rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.roleToggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  background: #222;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.4);
+}
+
+.roleToggle button {
+  flex: 1 1 50%;
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.roleToggle button:hover,
+.roleToggle button:focus {
+  color: #d4a4ff;
+  outline: none;
+}
+
+.roleToggle button.active {
+  background-color: #9b59b6;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: inset 0 -4px 0 #7d3ea6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.input {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #222;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #333;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.checkboxLabel {
+  font-weight: 500;
+  color: #ccc;
+  user-select: none;
+  cursor: pointer;
+}
+
+.loginBtn {
+  background-color: #9b59b6;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgb(155 89 182 / 0.5);
+}
+
+.loginBtn:hover,
+.loginBtn:focus {
+  background-color: #7d3ea6;
+  outline: none;
+}
+
+.imageContainer {
+  flex: 1 1 320px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgb(155 89 182 / 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .loginBox {
+    max-width: 100%;
+  }
+
+  .image {
+    max-width: 300px;
+  }
+}

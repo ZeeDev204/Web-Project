@@ -1,0 +1,265 @@
+.availability-page {
+  padding: 1rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-timeoff-btn,
+.add-slot-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-timeoff-btn {
+  background-color: #242424;
+  color: #fff;
+  border: 1px solid #2d2d2d;
+}
+
+.add-timeoff-btn:hover {
+  background-color: #2d2d2d;
+}
+
+.add-slot-btn {
+  background-color: #8B5CF6;
+  color: #fff;
+}
+
+.add-slot-btn:hover {
+  background-color: #7C3AED;
+}
+
+.availability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.schedule-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  background-color: #242424;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #2d2d2d;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  background-color: #242424;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.day-header {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.time-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.time-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+  background-color: #2d2d2d;
+}
+
+.time {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.time-slot.available .status-badge {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.time-slot.booked .status-badge {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: #8B5CF6;
+}
+
+.timeoff-section {
+  background-color: #242424;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.timeoff-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.timeoff-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeoff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeoff-header h3 {
+  color: #fff;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.timeoff-dates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.timeoff-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.action-btn.edit {
+  background-color: #8B5CF6;
+  color: #fff;
+  border: none;
+}
+
+.action-btn.edit:hover {
+  background-color: #7C3AED;
+}
+
+.action-btn.cancel {
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+}
+
+.action-btn.cancel:hover {
+  background-color: #dc2626;
+}
+
+.status-badge.approved {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.status-badge.pending {
+  background-color: rgba(234, 179, 8, 0.1);
+  color: #eab308;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .header-actions {
+    flex-direction: column;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeoff-list {
+    grid-template-columns: 1fr;
+  }
+
+  .timeoff-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+} 
