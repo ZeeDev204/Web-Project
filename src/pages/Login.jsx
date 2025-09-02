@@ -153,6 +153,8 @@ const Login = () => {
             </Link>
           </div>
         </div>
+            <Link to="/doctor/dashboard" className="auth-btn login-btn">Doctor Dashboard</Link>
+            <Link to="/patient/dashboard" className="auth-btn signup-btn">Patient Dashboard</Link>
       </main>
 
       <Footer />
