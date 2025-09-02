@@ -43,9 +43,9 @@ export const UserProvider = ({ children }) => {
   }, [userData]);
 
   // Check authentication status on mount
-  useEffect(() => {
-    refreshUserData();
-  }, []);
+  // useEffect(() => {
+  //   refreshUserData();
+  // }, []);
 
   return (
     <UserContext.Provider value={{ userData, setUserData, refreshUserData, loading }}>
