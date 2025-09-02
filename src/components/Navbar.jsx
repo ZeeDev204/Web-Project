@@ -49,6 +49,8 @@ const Navbar = () => {
           <div className="navbar-auth">
             <Link to="/login" className="auth-btn login-btn">Login</Link>
             <Link to="/signup" className="auth-btn signup-btn">Sign Up</Link>
+            <Link to="/doctor/dashboard" className="auth-btn login-btn">Doctor Dashboard</Link>
+            <Link to="/patient/dashboard" className="auth-btn signup-btn">Patient Dashboard</Link>
           </div>
         </div>
       </div>
